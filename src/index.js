@@ -12,10 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const dateInput = document.getElementById("task-date");
     const taskDate = dateInput.value;
 
-    if (!inputText || !taskDate) return; //prevents function from running when input is empty(ignore spaces and empty dates)
+    if (!inputText || !taskDate) return; //prevents function from running when input is empty(ignores spaces and empty dates)
 
     const toDoItem = document.createElement("li"); //li is created to store the task
-    toDoItem.textContent = inputText;
+    //toDoItem.textContent = inputText;
+    toDoItem.textContent = `${taskDate}: ${inputText}`;
 
     //edit button
 
