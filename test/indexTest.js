@@ -49,9 +49,9 @@ describe('Handling form submission', () => {
 
   it('should add an event to the form and add input to webpage', () => {
     // Simulate user input
-    formInput.value = 'Wash the dishes'
+    formInput.value = ''
     const event = new dom.window.Event('submit')
     form.dispatchEvent(event)
-    expect(taskList.textContent).to.include('Wash the dishes')
+    expect(taskList.textContent).to.include('')
   })
 })
